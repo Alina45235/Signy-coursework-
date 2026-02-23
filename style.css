@@ -1,0 +1,3109 @@
+/*==================== Шрифты ==========================*/
+@font-face {
+    font-family: 'IBM Plex Sans 500';
+    src: 
+    url("./fonts/IBMPlexSans-Medium.woff2") format("woff2"),
+    url("./fonts/IBMPlexSans-Medium.woff") format("woff"),
+    url("./fonts/IBMPlexSans-Medium.ttf") format("truetype"),
+    local('IBM Plex Sans');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBM Plex Serif 400';
+    src: 
+    url("./fonts/IBMPlexSerif-Regular.woff2") format("woff2"),
+    url("./fonts/IBMPlexSerif-Regular.woff") format("woff"),
+    url("./fonts/IBMPlexSerif-Regular.ttf") format("truetype"),
+    local('IBM Plex Serif');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBM Plex Sans 400';
+    src: 
+    url("./fonts/IBMPlexSans-Regular.woff2") format("woff2"),
+    url("./fonts/IBMPlexSans-Regular.woff") format("woff"),
+    url("./fonts/IBMPlexSans-Regular.ttf") format("truetype"),
+    local('IBM Plex Sans');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBM Plex Sans 700';
+    src: 
+    url("./fonts/IBMPlexSans-Bold.woff2") format("woff2"),
+    url("./fonts/IBMPlexSans-Bold.woff") format("woff"),
+    url("./fonts/IBMPlexSans-Bold.ttf") format("truetype"),
+    local('IBM Plex Sans');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBM Plex Sans 600';
+    src: 
+    url("./fonts/IBMPlexSans-SemiBold.woff2") format("woff2"),
+    url("./fonts/IBMPlexSans-SemiBold.woff") format("woff"),
+    url("./fonts/IBMPlexSans-SemiBold.ttf") format("truetype"),
+    local('IBM Plex Sans');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*==================== Общие настройки ==========================*/
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.page {
+    max-width: 1440px;
+    min-height: 100vh;
+    margin: 0px auto;
+}
+
+/*==================== ПЕРВЫЙ СЛАЙС ==========================*/
+
+/*============ Шапка сайта =============*/
+
+.first_item {
+    max-width: 1440px;
+    height: 676px;
+    background-image: url('./img/bacground_first_item.png');
+    padding: 36px 104px 29px 104px;
+}
+.menu {
+    display: inline;
+    
+}
+.head {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 108px;
+
+}
+
+.logo {
+    margin-right: 182px;
+    width: 130.22px;
+    height: 40px;
+}
+
+.right_head {
+    display: flex;
+    align-items: center;
+    font-family: 'IBM Plex Sans 500', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.19em;
+    text-decoration: none;
+    color: #061224E5;
+}
+
+.menu a{
+    margin-right: 30px;
+    text-decoration: none;
+    color: #061224E5;
+}
+
+
+.right_head button {
+    margin-right: 24px;
+    padding: 8px 32px;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing:  0.19em;
+
+}
+.sign_in {
+    width: 110px;
+    height: 40px;
+    border-radius: 43px;
+    border: 1.5px solid #1064E5;
+    margin-left: 33px;
+    background-color: transparent;
+}
+.right_head a {
+    text-decoration: none;
+    color: black;
+}
+.registratoin {
+    width: 189px;
+    height: 40px;
+    border-radius: 43px;
+    border: 1.5px solid #1064E5;
+    background-color: #1064E5;
+    color: white;
+}
+
+.gal::after {
+    content: url('./img/gal.png');
+    display: inline-block;
+    width: 8px;      
+    height: 4px;     
+    position: relative;
+    top:-14px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: middle;
+}
+
+#contacts {
+    margin-right: 0px;
+}
+
+/*============ Блок-контент слева =============*/
+
+/* Загловок */
+.main_title {
+    width: 586px;
+    font-family: 'IBM Plex Serif 400', sans-serif;
+    font-size: 20px;
+    line-height: 46px;
+    color:#061224E5;
+    margin-bottom: 14px;
+    letter-spacing: 0.3px;
+}
+
+/* Цифры 1 - 2 - 3 */
+.digit-steps {
+    display: flex;
+    margin-bottom: 18px;
+}
+
+.digit-step {
+    display: flex;
+    align-items: center;
+}
+
+.digit {
+    display: flex;
+    width: 15px;
+    height: 31px;
+}
+
+.digit-line {
+    width: 16px;
+    height: 0;
+    border-top: 2px solid #2563EB;
+    margin: 4px 16px 0 15px;
+
+}
+
+#digit_one {
+    font-family: 'IBM Plex Sans 500', sans-serif;
+    font-size: 24px;
+    color: #061224E5;
+}
+
+#digit_two, #digit_three {
+    font-family: 'IBM Plex Sans 500', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color: #5a5b5d;
+    line-height: 1.3rem;
+    position: relative;
+    top: 7px
+}
+
+/* h2 и параграф */
+.two_title {
+    width: 251px;
+    height: 31px;
+    font-family: 'IBM Plex Sans 500', sans-serif;
+    font-size: 15px;
+    color: #333437;
+    letter-spacing: 0.7px;
+    margin-bottom: 14px;
+}
+
+.text_item1 {
+    width: 454px;
+    height: 63px;
+    font-family: 'IBM Plex Sans 400', sans-serif;
+    font-size: 14px;
+    color: #061224E5;
+    letter-spacing: 0.1rem;
+    line-height: 1.4rem;
+    margin-bottom: 31px;
+}
+
+/* Кнопка попробовать бесплатно */
+.taste_free {
+    padding: 17.5px 32px;
+    border-radius: 45px;
+    width: 295px;
+    height: 56px;
+    background-color: #1064E5;
+    color:white;
+    border: 2px solid #1064E5;
+    font-family: 'IBM Plex Sans 700', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.1rem;
+}
+
+/*Точки для слайдера */
+.slider_points {
+    width: 80px;
+    height: 10px;
+    position: relative;
+    right: -575px;
+    bottom: -95px;
+
+}
+
+/*============ ВТОРОЙ СЛАЙС =============*/
+.two_item {
+    width: 1440px;
+    height: 210px;
+    background-color: white;
+    padding: 54px 227px 75px 227px;
+}
+
+/* Общий контейнер */
+.description {
+    width: 985px;
+    height: 81px;
+    display: flex;
+    
+}
+
+/* МОМЕНТАЛЬНО */ 
+.moment {
+    width: 306px;
+    height: 81px;
+    margin-right: 54px;
+    display: flex;
+    align-items: flex-start; 
+}
+
+.moment_pic {
+    margin-right: 20px;
+    margin-left: -2px;
+    margin-top: 4px;
+    width: 60px;
+    height: 60px;
+    display: inline;
+
+}
+
+.moment_content h2 {
+    font-family: 'IBM Plex Sans 500', sans-serif;
+    font-size: 24px;
+    margin-right: 45px;
+    margin-bottom: 12px;
+    color: #333437;
+    margin-top: -11px;
+}
+
+.moment_content p {
+    font-family: 'IBM Plex Sans 400', sans-serif;
+    font-size: 16px;
+    color: #061224E5;
+    letter-spacing: 0.05rem;
+}
+
+/* ГЛОБАЛЬНО */
+.global {
+    width: 265px;
+    height: 80px;
+    margin-right: 78px;
+    display: flex;
+    align-items: flex-start;
+}
+.global_pic {
+    margin-right: 20px;;
+    margin-left: -2px;
+    margin-top: 4px;
+}
+.global_content h2 {
+    font-family: 'IBM Plex Sans 500', sans-serif;
+    font-size: 24px;
+    margin-right: 45px;
+    margin-bottom: 12px;
+    color: #333437;
+    margin-top: -11px;
+}
+
+.global_content p {
+    font-family: 'IBM Plex Sans 400', sans-serif;
+    font-size: 16px;
+    color: #061224E5;
+    letter-spacing: 0.05rem;
+}
+
+
+/* ЭКОНОМНО */
+.econom {
+    width: 282px;
+    height: 78px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.econom_pic {
+    margin-right: 20px;;
+    margin-left: -2px;
+    margin-top: 4px;
+}
+.econom_content h2 {
+    font-family: 'IBM Plex Sans 500', sans-serif;
+    font-size: 24px;
+    margin-right: 45px;
+    margin-bottom: 13px;
+    color: #333437;
+    margin-top: -11px;
+}
+
+.econom_content p {
+    font-family: 'IBM Plex Sans 400', sans-serif;
+    font-size: 16px;
+    color: #061224E5;
+    letter-spacing: 0.05rem;
+}
+
+/*============ ТРЕТИЙ СЛАЙС =============*/
+.three_item {
+    width: 1440px;
+    height: 940px;
+    background-image: url('./img/backgrund_three_item.png');
+    padding-top: 57px;
+}
+
+.comfort {
+    width: 1232.98px;
+    height: 395px;
+    margin: 0px 103.02px 57px 104px;
+    display: flex;
+    align-items: flex-start;
+    gap: 133px;
+}
+.comfort_pic_mini{
+    display: none;
+}
+
+.product {
+    width: 1263px;
+    height: 338.37px;
+    margin: 0px 71px 92.63px 106px;
+    display: flex;
+    align-items: flex-start;
+    gap:135px;
+}
+
+
+/* =====   ВЕСЬ ПЕРВЫЙ БЛОК (КОМФОРТ) ===== */
+.comfort_content {
+    width: 502px;
+    height: 395px;
+}
+
+/*Заголовок контента*/
+.comfort_content h1 {
+    font-family: 'IBM Plex Serif 400', sans-serif;
+    font-size: 40px;
+    line-height: 48px;
+    color:#061224E5;
+    letter-spacing: 0.3px;
+    margin-bottom: 20px;
+    position: relative;
+    top: -8px;
+    left: -2px;
+}
+
+/* Список */
+.comfort_content ul {
+    list-style: none;
+}
+
+.comfort_content li {
+    list-style-position: inside;
+    font-family: 'IBM Plex Sans 400', sans-serif;
+    font-size: 18px;
+    color: #061224E5;
+    margin-bottom: 12px;
+    line-height: 27px;
+    text-align: left;
+    position: relative;
+    top: -5px;
+    right: -5px;
+}
+
+#two_li {
+    margin-bottom: 12px;
+}
+
+ul li::before {
+    content: "- ";
+    position: relative;
+    left: -5px;
+}
+
+/* Кнопка */
+.btn_more {
+    width: 217px;
+    height: 56px;
+    border-radius: 46px;
+    background-color: transparent;
+    border: 2px solid #1064E5;
+    font-family: 'IBM Plex Sans 700', sans-serif ;
+    font-size: 14px;
+    line-height: 24px;
+    color:#061224E5;
+    margin-top: 4px;
+}
+
+/*картинка */
+.comfort_pic {
+    position: relative;
+    bottom: -25px;
+
+}
+
+/* ====== ВТОРОЙ БЛОК - НАШ ПРОДУКТ ЭТО ========= */
+.product_content {
+    width: 533px;
+    height: 330px;
+}
+
+/*Заголовок контента*/
+.product_content h1 {
+    font-family: 'IBM Plex Serif 400', sans-serif;
+    font-size: 40px;
+    line-height: 48px;
+    color:#061224E5;
+    letter-spacing: 0.3px;
+    margin-bottom: 24px;
+    position: relative;
+    top: -5px;
+    left: -4px;
+}
+.product_pic_mini {
+    display: none;
+}
+/* Список */
+.product_content ul {
+    list-style: none;
+}
+
+.product_content li {
+    list-style-position: inside;
+    font-family: 'IBM Plex Sans 400', sans-serif;
+    font-size: 18px;
+    color: #061224E5;
+    margin-bottom: 10px;
+    line-height: 27px;
+    text-align: left;
+    position: relative;
+    top: -3px;
+    right: -7px;
+}
+
+
+ul li::before {
+    content: "- ";
+    position: relative;
+    left: -9px;
+}
+
+/* Кнопка */
+.btn_reg {
+    width: 217px;
+    height: 56px;
+    border-radius: 46px;
+    background-color: #1064E5;
+    border: 2px solid #1064E5;
+    font-family: 'IBM Plex Sans 700', sans-serif ;
+    font-size: 14px;
+    line-height: 24px;
+    color:white;
+    margin-top: 28px;
+    left: 5px;
+}
+
+/* картинка */
+.product_pic {
+    position: relative;
+    bottom: 4px;
+    left: -2px;
+
+}
+
+
+/* ================= ЧЕТВЕРТЫЙ СЛАЙС ====================== */
+.four_item {
+    width: 1440px;
+    height: 586px;
+    background-color: white;
+    padding-top: 57px;
+}
+
+/* Заголовок */
+.title_pac {
+    width: 735px;
+    height: 48px;
+    margin: 0px 352px 63px 352px;
+    text-align: center;
+    font-family: 'IBM Plex Serif 400', sans-serif;
+    font-size: 18px;
+    position: relative;
+    top:-9.5px;
+    color:#061224E5;
+    letter-spacing: 3px;
+}
+
+/* Контейнер карточек */
+.tarif_card {
+    width: 1124px;
+    height: 320px;
+    margin: 0px 158px 98px 158px;
+    display: flex;
+}
+
+/* Карточка demo тариф */
+.demo {
+     width: 256px;
+     height: 320px;
+     padding: 32px;
+     background-image: url("./img/back_carg_tarif.png");
+     margin-right: 32px;
+}
+
+.demo h2 {
+    width: 76px;
+    height: 40px;
+    font-family: 'IBM Plex Sans 500', sans-serif;
+    color: #061224E5;
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 44px;
+    position: relative;
+    left:-2px;
+    top:-2px;
+}
+
+.doki {
+    width: 111px;
+    height: 24px;
+    font-family: 'IBM Plex Sans 500', sans-serif;
+    font-size: 16px;
+    margin-bottom: 25px;
+    position: relative;
+    top:-4px;
+    left: -2px;
+}
+
+.number {
+    width: 29px;
+    height: 48px;
+    color: #061224E5;
+    font-family: 'IBM Plex Sans 700', sans-serif;
+    font-size: 48px;
+    position: relative;
+    top:-24px;
+    left:-2px;
+}
+
+.val {
+    display: inline-block;
+    width: 105px;
+    height: 48px;
+    font-family: 'IBM Plex Sans 500', sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    position: relative;
+    top:-25px;
+}
+
+.demo button {
+    width: 192px;
+    height: 40px;
+    border-radius: 100px;
+    background-color: #1064E5;
+    color: #EBF5F6;
+    border: 2px solid #1064E5;
+    font-family: 'IBM Plex Sans 600', sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.6px;;
+}
+
+/* Карточка Business */ 
+.business {
+     width: 256px;
+     height: 320px;
+     padding: 32px 23px 32px 32px;
+     background-image: url("./img/back_carg_tarif.png");
+     margin-right: 32px;
+}
+
+.business h2 {
+    width: 116px;
+    height: 40px;
+    font-family: 'IBM Plex Sans 500', sans-serif;
+    color: #061224E5;
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 44px;
+    position: relative;
+    left:-2px;
+    top:-2px;
+}
+
+.doki_2 {
+    font-family: 'IBM Plex Sans 500', sans-serif;
+    font-size: 16px;
+    margin-bottom: 25px;
+    position: relative;
+    top:-4px;
+    left: -2px;
+}
+
+.number_2 {
+    width: 127px;
+    height: 48px;
+    color: #061224E5;
+    font-family: 'IBM Plex Sans 700', sans-serif;
+    font-size: 48px;
+    position: relative;
+    top:-24px;
+    left:-2px;
+}
+
+.val_2 {
+    display: inline-block;
+    font-family: 'IBM Plex Sans 500', sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    position: relative;
+    top:-23px;
+    left: -2px;
+}
+
+.business button {
+    width: 192px;
+    height: 40px;
+    border-radius: 100px;
+    background-color: #1064E5;
+    color: #EBF5F6;
+    border: 2px solid #1064E5;
+    font-family: 'IBM Plex Sans 600', sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;;
+    position: relative;
+    top: 18px;
+}
+
+/*Карточка Pro */
+.pro {
+     width: 256px;
+     height: 320px;
+     padding: 32px 23px 32px 32px;
+     background-image: url("./img/back_carg_tarif.png");
+     margin-right: 36px;
+}
+
+.pro h2 {
+    width: 116px;
+    height: 40px;
+    font-family: 'IBM Plex Sans 500', sans-serif;
+    color: #061224E5;
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 44px;
+    position: relative;
+    left:-2px;
+    top:-2px;
+}
+
+.doki_3 {
+    font-family: 'IBM Plex Sans 500', sans-serif;
+    font-size: 16px;
+    margin-bottom: 25px;
+    position: relative;
+    top:-4px;
+    left: -2px;
+}
+
+.number_3 {
+    color: #061224E5;
+    font-family: 'IBM Plex Sans 700', sans-serif;
+    font-size: 48px;
+    position: relative;
+    top:-24px;
+    left:-2px;
+}
+
+.val_3 {
+    display: inline-block;
+    font-family: 'IBM Plex Sans 500', sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    position: relative;
+    top:-23px;
+    left: -2px;
+}
+
+.pro button {
+    width: 192px;
+    height: 40px;
+    border-radius: 100px;
+    background-color: #1064E5;
+    color: #EBF5F6;
+    border: 2px solid #1064E5;
+    font-family: 'IBM Plex Sans 600', sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.9px;;
+    position: relative;
+    top: 18px;
+    left: -2px;
+}
+
+/* Карточка individual */
+.individual {
+     width: 256px;
+     height: 320px;
+     padding: 32px;
+     background-image: url("./img/back_carg_tarif.png");
+}
+
+.individual h2 {
+    width: 116px;
+    height: 40px;
+    font-family: 'IBM Plex Sans 500', sans-serif;
+    color: #061224E5;
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 44px;
+    position: relative;
+    left:-2px;
+    top:-2px;
+}
+
+.doki_4 {
+    font-family: 'IBM Plex Sans 500', sans-serif;
+    font-size: 16px;
+    margin-bottom: 25px;
+    position: relative;
+    top:-4px;
+    left: -2px;
+    line-height: 24px;
+}
+
+.individual button {
+    width: 192px;
+    height: 40px;
+    border-radius: 100px;
+    background-color: #1064E5;
+    color: #EBF5F6;
+    border: 2px solid #1064E5;
+    font-family: 'IBM Plex Sans 600', sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.5px;;
+    position: relative;
+    top: 55px;
+    left: -2px;
+}
+
+/* ================= ПЯТЫЙ СЛАЙС ====================== */
+.five_item {
+    width: 1440px;
+    height: 310px;
+    background-color: #D8F1F0;
+    padding-top: 43px;
+}
+
+.stat {
+    width: 606px;
+    height: 224px;
+    margin: 0px 417px 43px 417px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat h1 {
+    font-family: 'IBM Plex Sans 500', sans-serif;
+    font-size: 73px;
+    line-height: 48px;
+    margin-bottom: 12px;
+}
+
+.stat h2 {
+    font-family: 'IBM Plex Serif 400', sans-serif;
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 12px;
+    position: relative;
+    left: -2px;
+    top:2px;
+    letter-spacing: 0.5px;
+}
+
+.stat p {
+    width: 478px;
+    height: 84px;
+    font-family: 'IBM Plex Sans 400', sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    position: relative;
+    left: -2px;
+    top: 6px;
+}
+
+/* ================= ШЕСТОЙ СЛАЙС ====================== */
+.six_item {
+    width: 1440px;
+    height: 344px;
+    background-color: white;
+    padding-top: 47px;
+    text-align: center;
+}
+
+.friends {
+    width: 1033px;
+    height: 199px;
+    margin: 0px 204px 98px 203px;
+}
+
+.friends h1 {
+    font-family: 'IBM Plex Serif 400', sans-serif;
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 25px;
+    position: relative;
+    top:-3px;
+    left: 12px;
+    letter-spacing: 0.6px;
+}
+
+.fr1 {
+    margin-right: 80px;
+    position: relative;
+    left: -10px;
+    top: -2px;
+}
+.fr2 {
+    margin-right: 90px;
+    position: relative;
+    left: 8px;
+    top: -12px;
+}
+.fr3 {
+    margin-right: 134px;
+    position: relative;
+    left: 10px;
+    top: -10px;
+}
+.fr4 {
+    position: relative;
+    left: 6px;
+    top: 4px;
+}
+
+.points {
+    position: relative;
+    top:-76px;
+    left:-2px
+}
+
+/* ================= СЕДЬМОЙ СЛАЙС ====================== */
+.seven_item {
+    width: 1440px;
+    height: 654px;
+    background-color: #D8F1F0;
+    padding-top: 38px;
+    text-align: center;
+}
+
+/* Заголовок */
+.title_about{
+    width: 606px;
+    height: 46px;
+    margin: 0px 417px 32px 417px;
+    font-family: 'IBM Plex Serif 400';
+    font-size: 20px;
+    line-height: 48px;
+    position: relative;
+    top:-6px;
+    left: -2px;
+    letter-spacing: 0.3px;
+}
+
+/* Общий контейнер с блоками */
+.three_blocks {
+    width: 1230px;
+    height: 494px;
+    margin: 0px 105px 44px 105px;
+    display: flex;
+}
+
+/* Первый блок */
+.first_blok {
+    width: 374px;
+    height: 494px;
+    margin-right: 54px;
+}
+
+.first_block_pic1 {
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+}
+
+.first_block_content {
+    width: 271px;
+    height: 85px;
+    text-align: left;
+    margin-left: 12px;
+    margin-top: 4px;
+}
+
+.first_block_content p {
+    margin-bottom: 6px;
+    font-family: 'IBM Plex Sans 500';
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.first_block_content h3 {
+    font-family: 'IBM Plex Sans 500';
+    font-size: 24px;
+    line-height: 26.5px;
+}
+
+/* Второй блок */
+.second_blok {
+    width: 374px;
+    height: 494px;
+    margin-right: 54px;
+}
+
+.second_block_pic2 {
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+
+.second_block_content {
+    width: 271px;
+    height: 85px;
+    text-align: left;
+    margin-left: 13px;
+    margin-top: 4px;
+}
+
+.second_block_content p {
+    margin-bottom: 6px;
+    font-family: 'IBM Plex Sans 500';
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.second_block_content h3 {
+    font-family: 'IBM Plex Sans 500';
+    font-size: 24px;
+    line-height: 26.5px;
+}
+
+/* Третий блок */
+.third_blok {
+    width: 374px;
+    height: 494px;
+}
+
+.third_blok {
+    width: 374px;
+    height: 494px;
+    margin-right: 54px;
+}
+
+.third_block_pic3 {
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+}
+
+.third_block_content {
+    width: 271px;
+    height: 85px;
+    text-align: left;
+    margin-left: 13px;
+    margin-top: 4px;
+}
+
+.third_block_content p {
+    margin-bottom: 6px;
+    font-family: 'IBM Plex Sans 500';
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.third_block_content h3 {
+    font-family: 'IBM Plex Sans 500';
+    font-size: 24px;
+    line-height: 26.5px;
+}
+
+/* ================= ВОСЬМОЙ СЛАЙС ====================== */
+.eight_item {
+    width: 1440px;
+    height: 651px;
+    background-color: white;
+    padding-top: 49px;
+}
+
+.meet_block {
+    width: 734px;
+    height: 539px;
+    margin: 0px 353px 63px 353px;
+}
+
+.meet_title {
+    width: 513px;
+    height: 68px; 
+    text-align: center;
+    margin: 0px 110px;
+    font-family: 'IBM Plex Serif 400', sans-serif;
+    font-size: 20px;
+    line-height: 48px;
+    position: relative;
+    top: -6px;
+    left: -4px;
+    letter-spacing: 0.3px;
+}
+
+.video_block {
+    width: 734px;
+    height: 451px;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+}
+
+/* ================= ДЕВЯТЫЙ СЛАЙС ====================== */
+.nine_item {
+    width: 1440px;
+    height: 451px;
+    background-color: #DEEEFC;
+    padding-top: 26px;
+}
+
+/* Заголовок для вопросов */
+.question_title {
+    width: 797px;
+    height: 53px;
+    font-family: 'IBM Plex Serif 400', sans-serif;
+    font-size: 20px;
+    line-height: 48px;
+    margin: 0px 322px 30px 322px;
+    position: relative;
+    top: -6px;
+    left: 6px;
+    letter-spacing: 0.4px;
+}
+
+/* Общий блок с вопросами */
+.block_faq {
+    width: 527px;
+    height: 300px;
+    margin: 0px 455px;
+}
+
+.block_faq details {
+    margin-bottom: 18px;
+    line-height: 24px;
+}
+
+.block_faq summary {
+    list-style: none;
+    font-family: 'IBM Plex Sans 400', sans-serif;
+    font-size: 18px;
+    padding-left: 30px;
+    position: relative;
+}
+
+/* Добавляем + для всех закрытых */
+.block_faq summary::before {
+    content: "+";
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    font-size: 20px;
+    color: #1064E5;
+}
+
+/* Для открытого меняем на - */
+.block_faq details[open] summary::before {
+    content: "-";
+    color:#1064E5;
+}
+
+/* Стили для ответа второго вопроса */
+.block_faq details:nth-child(2) p {
+    padding-left: 30px;
+    font-family: 'IBM Plex Sans 400', sans-serif;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.micro {
+    position: relative;
+    left:4px;
+}
+
+.last {
+    position: relative;
+    top: -4px;
+    left: 4px;
+}
+
+/* ================= ДЕСЯТЫЙ СЛАЙС ====================== */
+.ten_item {
+    width: 1440px;
+    height: 345px;
+    background-color: white;
+    padding-top: 56px;
+}
+
+.form_content {
+    width: 663px;
+    height: 191px;
+    margin: 0px 389px 98px 388px;
+}
+
+.news_title {
+    width: 663px;
+    height: 49px;
+    font-family: 'IBM Plex Serif 400', sans-serif;
+    font-size: 20px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: 0.4px;
+    margin-bottom: 30px;
+}
+
+.news_text {
+    width: 625px;
+    height: 32px;
+    font-family: 'IBM Plex Sans 400', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    position: relative;
+    left: 16px;
+    margin-bottom: 26px;
+}
+
+.forma {
+    text-align: center;
+}
+
+input {
+    width: 399px;
+    height: 50px;
+    border: 1px solid blue;
+    border-radius: 37px;
+    margin-right: 12px;
+}
+
+.form_content form {
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn_send {
+    width: 178px;
+    height: 50px;
+    border-radius: 41px;
+    color:white;
+    background-color: blue;
+    border: 1px solid blue;
+    letter-spacing: 2.9px;
+}
+
+/* ================= ОДИННАДЦАТЫЙ СЛАЙС  - ФУТЕР ====================== */
+.eleven_item {
+    width: 1440px;
+    height: 288px;
+    background-color: #061224;
+}
+
+.copyright {
+    color: #8a8989;
+    font-family: 'IBM Plex Sans 400', sans-serif;
+    font-size: 12px;
+    line-height: 24px;
+    position: relative;
+    right: -100px;
+    bottom: -160px;
+}
+
+.logo_foot {
+    position: relative;
+    right: -100px;
+    bottom: -60px;
+}
+
+.block_one {
+    color:white;
+    font-family: 'IBM Plex Sans 500', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    position: relative;
+    top:-8px;
+    right: -390px;
+}
+
+.block_two {
+    color:white;
+    font-family: 'IBM Plex Sans 500', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    position: relative;
+    top: 24px;
+    right: -390px;
+}
+
+.oferta {
+    color: #8a8989;
+    font-family: 'IBM Plex Sans 400', sans-serif;
+    font-size: 12px;
+    line-height: 24px;
+    position: relative;
+    right: -390px;
+    bottom: -42px;
+}
+
+.block_three {
+    color:white;
+    font-family: 'IBM Plex Sans 500', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    position: relative;
+    top: -128px;
+    right: -538px;
+}
+
+.security {
+    color: #8a8989;
+    font-family: 'IBM Plex Sans 400', sans-serif;
+    font-size: 12px;
+    line-height: 24px;
+    position: relative;
+    right: -538px;
+    bottom: 30px;
+}
+
+.email {
+    color:white;
+    font-family: 'IBM Plex Sans 500', sans-serif;
+    font-size: 12px;
+    line-height: 24px;
+    position: relative;
+    top: -198px;
+    left: 863px;
+    letter-spacing: 0.9px;
+}
+
+.face {
+    color:white;
+    font-family: 'IBM Plex Sans 500', sans-serif;
+    font-size: 12px;
+    line-height: 24px;
+    position: relative;
+    top: -200px;
+    left: 863px;
+    letter-spacing: 0.9px;
+}
+
+.adress {
+    color: #8a8989;
+    font-family: 'IBM Plex Sans 400', sans-serif;
+    font-size: 14px;
+    line-height: 27px;
+    position: relative;
+    top:-248px;
+    left:1158px;
+}
+
+/* ================= НАСТРОЙКИ ПО ГОРИЗОНТАЛЬНОМУ СКРОЛЛУ ====================== */
+/* Исправление для всех блоков */
+.first_item, .two_item, .three_item, .four_item,
+.five_item, .six_item, .seven_item, .eight_item,
+.nine_item, .ten_item, .eleven_item {
+    box-sizing: border-box; /* padding включается в ширину */
+    width: 100%; 
+    margin: 0 auto;
+}
+
+/* Ограничить общий контейнер */
+.page {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow-x: hidden; 
+}
+
+.logo-mobile {
+    display: none;
+}
+
+
+/* ================= ХОВЕР ЭФФЕКТЫ ====================== */
+
+/* Курсор-палец для всех кликабельных элементов */
+a:hover,
+button:hover,
+summary:hover {
+    cursor: pointer;
+}
+
+/* Плавные переходы для кнопок */
+button {
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Основные кнопки с синим фоном */
+.registratoin:hover,
+.taste_free:hover,
+.btn_reg:hover,
+.demo button:hover,
+.business button:hover,
+.pro button:hover,
+.individual button:hover,
+.btn_send:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(16, 100, 229, 0.25);
+    background-color: #0a4cb5;
+    border-color: #0a4cb5;
+}
+
+/* Кнопка "ВХОД"  */
+.sign_in:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(16, 100, 229, 0.15);
+    background-color: #1064E5;
+    color: white;
+}
+
+/* Кнопка "УЗНАТЬ БОЛЬШЕ" */
+.btn_more:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(16, 100, 229, 0.15);
+    background-color: #1064E5;
+    color: white;
+}
+
+/*  эффект для ссылок в меню */
+.menu a:hover {
+    color: #1064E5;
+    text-decoration: underline;
+}
+.hidden {
+    display: none;
+}
+
+/* ================= АДАПТИВ ====================== */
+/* ДЛЯ ЭКРАНА -ШИРИНА 768 */
+@media (max-width: 768px) {
+
+    .page {
+       height: auto;
+    }
+    /* ПЕРВЫЙ СЛАЙС */
+    .logo {
+        position: relative;
+        left: -55px;
+    }
+
+    .logo::after {
+        content: '';
+            position: absolute;
+            width: 27px;
+            height: 4px;
+            background-color: #1064E5;
+            top: 25px;
+            left: 642px;
+            transform: translateY(-180%) rotate(180deg);
+            border-radius: 2px;
+            box-shadow: 
+                        0 -10px 0 0 #1064E5,  
+                        0 10px 0 0 #1064E5;;
+    }
+
+    .right_head {
+        display: none;
+    }
+
+    .main_title {
+        font-size: 16px;
+        width: 344px;
+        height: 132px;
+        position: relative;
+        left: -53px;
+        top:-50px;
+        letter-spacing: 3.05px;
+    }
+
+    .digit-steps {
+        position: relative;
+        top:-27px;
+        left: -53px;
+    }
+
+    .two_title {
+        position: relative;
+        top:-38px;
+        left:-53px;
+    }
+
+    .text_item1 {
+        position: relative;
+        top:-33px;
+        left:-53px;
+        font-size: 16px;
+        width: 324px;
+        height: 84px;
+        letter-spacing: 0.6px;
+    }
+
+    .taste_free {
+        position: relative;
+        top:-30px;
+        left:-55px;
+        letter-spacing: 0.11rem;;
+    }
+    .first_item {
+        background-image: url('./img/background_first_item\(768\).png');
+        height: 643px;
+    }
+
+    .slider_points {
+        top: 15px;
+        left: 240px;
+    }
+
+
+   /* ВТОРОЙ СЛАЙС */
+    .two_item {
+        padding: 70px 50px 55px 49px;
+        height: 185px; 
+    }
+
+    .description {
+        width: 669px;
+        height: 92px;
+        display: flex;
+        justify-content: space-between; 
+        align-items: flex-start;
+        gap: 5px; 
+    }
+
+    /* Все три блока одинаковые по ширине */
+    .moment,
+    .global,
+    .econom {
+        width: 221px; 
+        height: 88px;
+        margin-right: 0;
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    /* правый отступ у последнего элемента */
+    .econom {
+        margin-right: 0;
+    }
+
+    /* Картинки 42x42 */
+    .moment_pic,
+    .global_pic,
+    .econom_pic {
+        width: 42px;
+        height: 42px;
+        flex-shrink: 0;
+        margin-top: -32px; 
+        margin-left: 0px;
+    }
+
+    
+    .moment_pic img,
+    .global_pic img,
+    .econom_pic img,
+    .moment_pic picture,
+    .global_pic picture,
+    .econom_pic picture {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    /* Контентная часть */
+    .moment_content,
+    .global_content,
+    .econom_content {
+        flex: 1;
+    }
+
+    /* Заголовки */
+    .moment_content h2,
+    .global_content h2,
+    .econom_content h2 {
+        font-family: 'IBM Plex Sans 500', sans-serif;
+        font-size: 20px;
+        line-height: 24px;
+        color: #333437;
+        margin-bottom: 2px; 
+        margin-top: -35px; 
+        position: relative;
+        left:-25px;
+    }
+
+    .global_content h2,
+    .econom_content h2 {
+        margin-bottom: 4px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+    }
+
+    /* Параграфы 16px */
+    .moment_content p,
+    .global_content p,
+    .econom_content p {
+        font-family: 'IBM Plex Sans 400', sans-serif;
+        font-size: 16px;
+        line-height: 22px;
+        color: #061224E5;
+        letter-spacing: 0.05rem;
+        position: relative;
+        left:-25px;
+        
+    }
+
+    .econom_content p {
+        font-family: 'IBM Plex Sans 400', sans-serif;
+        font-size: 15px; 
+        position: relative;
+        top: 3px;
+        left: -22px;
+        letter-spacing: 1px;
+    }
+
+    /* лишние отступы */
+    .moment_content,
+    .global_content,
+    .econom_content {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* ТРЕТИЙ СЛАЙС */
+    .three_item {
+        height: 952px;
+    }
+
+    .comfort {
+        margin: 0px 0px 61px 50px;
+        gap: 25px;
+    }
+    .comfort_content {
+        width: 410px;
+        height: 393px;
+    }
+
+    .comfort_content h1 {
+        font-size: 36px;
+    }
+
+    .comfort_content li {
+        font-size: 16px;
+        left: 2px;
+        top: -7px;
+    }
+
+    .btn_more {
+        height: 47px;
+        position: relative;
+        top:4px;
+    }
+    ul li::before  {
+        left: -3px;
+    }
+
+    .comfort_pic {
+        width: 497.98px;
+        height: 282.73px;
+        display: block; 
+        overflow: hidden; 
+        top:40px;
+        left: -6px;
+    }
+
+    .product {
+        margin: 0px;
+        gap:80px;
+    }
+
+    .product_pic {
+        position: relative;
+        width: 497.98px;
+        height: 282.73px;
+        display: block; 
+        overflow: hidden; 
+        top:50px;
+        left: -235px;
+    }
+
+    .product_content {
+        position: relative;
+        left: -265px;
+        width: 410px;
+    }
+
+    .product_content h1 {
+        font-size: 36px;
+        position: relative;
+        top:-10px;
+    }
+
+    .product_content li {
+        font-size: 18px;
+        left: 5px;
+        letter-spacing: 0.1px;
+    }
+
+    ul li::before {
+        left:-12.5px;
+    }
+
+    .btn_reg {
+        height: 47px;
+        position: relative;
+        left: 35px;
+        top:20px;
+    }
+
+    /* ЧЕТВЕРТЫЙ СЛАЙС */
+    .four_item {
+        height: 831px;
+        padding-top: 57px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title_pac {
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 40px;
+        position: relative;
+        top:-30px;
+        left:2px;
+        letter-spacing: 2.7px;
+
+    }
+
+    .tarif_card {
+        margin: 0px;
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center;
+        gap: 20px; 
+        max-width: 600px;
+    }
+
+    .demo,
+    .business,
+    .pro,
+    .individual {
+        width: 256px;
+        height: 320px;
+        position: static; 
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: 0; 
+    }
+
+    .demo {
+        position: relative;
+        top:-52px;
+        left:-14px;
+    }
+
+    .business {
+        position: relative;
+        top:-52px;
+        left: 16px;
+    }
+
+    .pro {
+        position: relative;
+        top: -22px;
+        left: -14px;
+    }
+
+    .individual {
+        position: relative;
+        top: -22px;
+        left: 16px;
+    }
+
+
+    /* ПЯТЫЙ СЛАЙС */
+    .five_item {
+        height: 252px;
+    }
+
+    .stat {
+        margin: 0px;
+    }
+
+    .stat h1 {
+        font-size: 56px;
+        position: relative;
+        top: -14px;
+        left: 80px;
+    }
+
+    .stat h2 {
+        font-size: 36px;
+        position: relative;
+        top: -20px;
+        left: 80px;
+    }
+
+    .stat p {
+        position: relative;
+        top:-27px;
+        left:83px;
+        line-height: 23px;
+    }
+    /* ШЕСТОЙ СЛАЙС */
+    .six_item {
+        height: 338px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .friends {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .friends h1 {
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 40px;
+        position: relative; 
+        top:-10px;
+        left:0px;
+        width: 100%;
+    }
+
+    /* Контейнер для логотипов */
+    .friends {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 600px;
+    }
+
+    /* Общие стили для всех картинок */
+    .fr1,
+    .fr2,
+    .fr3,
+    .fr4 {
+        position: static;
+        left: auto;
+        top: auto ;
+        right: auto;
+        margin: 0 ;
+    }
+
+    /* Первая картинка */
+    .fr1 {
+        width: 134px;
+        height: 80px;
+        position: relative;
+        left:-46px;
+        top:-18px;
+    }
+
+    /* Вторая картинка */
+    .fr2 {
+        width: 172.5px; 
+        height: 70px;
+        position: relative;
+        top: -20px;
+        left: -15px;
+    }
+
+    /* Третья картинка */
+    .fr3 {
+        width: 157.5px; 
+        height: 70px;
+        position: relative;
+        left: 15px;
+        top:-20px;
+
+    }
+
+    /* Четвертая картинка */
+    .fr4 {
+        width: 96px; 
+        height: 88px;
+        position: relative;
+        top:-20px;
+        left: 45px;
+    }
+
+    /* Для всех изображений внутри picture */
+    .fr1 img,
+    .fr2 img,
+    .fr3 img,
+    .fr4 img,
+    .fr1 picture,
+    .fr2 picture,
+    .fr3 picture,
+    .fr4 picture {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: block;
+    }
+
+    .points {
+        margin-top: 20px;
+        position: relative;
+        top: -15px;
+    }
+
+    /* СЕДЬМОЙ СЛАЙС */
+    .seven_item {
+        height: 675px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 38px;
+    }
+
+    .title_about {
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 32px;
+        width: 100%;
+        letter-spacing: 2.7px;
+        position: relative;
+        left: 0px;
+        top:-4px;
+    }
+
+    .three_blocks {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 688px; 
+        height: 395px;
+    }
+
+    .first_blok {
+        width: 324px;
+        height: 395px;
+        position: absolute;
+        left: -14px;
+        top: 5px;
+    }
+
+    .second_blok {
+        width: 324px;
+        height: 395px;
+        position: absolute;
+        right: -43px;
+        top: 5px;
+    }
+
+    .third_blok {
+        display: none;
+    }
+
+    /* Картинки */
+    .first_block_pic1,
+    .second_block_pic2 {
+        width: 324px;
+        height: 395px;
+    }
+
+    .first_block_pic1 img,
+    .second_block_pic2 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    /* Контент */
+    .first_block_content {
+        width: 271px;
+        height: 85px;
+        position: absolute;
+        bottom: -101px; 
+        left: 28px;
+    }
+
+    .second_block_content {
+        width: 271px;
+        height: 85px;
+        position: absolute;
+        bottom: -100px; 
+        left: 5px;
+    }
+
+    .first_block_content p,
+    .second_block_content p {
+        margin-bottom: 6px;
+        font-family: 'IBM Plex Sans 500';
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .first_block_content h3,
+    .second_block_content h3 {
+        font-family: 'IBM Plex Sans 500';
+        font-size: 20px;
+        line-height: 26.5px;
+    }
+
+    /* ВОСЬМОЙ СЛАЙС */
+    .eight_item {
+        height: 591px;
+    }
+    .meet_title {
+        font-size: 16px;
+        left:-345px;
+        top: -10px;
+        letter-spacing: 2.8px;
+    }
+    .video_block {
+        width: 668px;
+        height: 423px;
+        position: relative;
+        left:-305px;
+        top:-20px;
+    }
+
+    /* ДЕВЯТЫЙ СЛАЙС */
+    .nine_item {
+        height: 449px;
+    }
+    .question_title {
+        width: 458px;
+        height: 72px;
+        font-size: 16px;
+        text-align: center;
+        top: -13px;
+        left:-167px;
+        line-height: 38px;
+        letter-spacing: 2.8px;
+    }
+
+    .block_faq {
+        margin: 0px;
+        position: relative;
+        top: -20px;
+        left:135px;
+    }
+    .block_faq summary {
+        font-size: 16px;
+        letter-spacing:0.6px;
+    }
+    .block_faq details:nth-child(2) p {
+        font-size: 16px;
+        letter-spacing: 0px;
+    }
+    .micro {
+        left: 2px;
+        top: 5px;
+    }
+
+    .last {
+        top: 2px;
+        left: -1px;
+    }
+
+    /* ДЕСЯТЫЙ СЛАЙС */
+    .ten_item {
+        height: 255px;
+    }
+    .news_title {
+        font-size: 16px;
+        position: relative;
+        top:-20px;
+        left:-336px;
+        letter-spacing: 2.6px;
+    }
+    .news_text {
+        font-size: 16px;
+        top:-30px;
+        left:-317px;
+    }
+    .form_content form {
+        position: relative;
+        top:-28px;
+        left:-338px;
+    }
+    .btn_send {
+        position: relative;
+        left:-335px;
+        top:-30px;
+    }
+
+    /* ОДИННАДЦАТЫЙ СЛАЙС */
+    .eleven_item {
+        height: 379px;
+    }
+    .logo_foot{
+        width: 120px;
+        height: 36px;
+        top:45px;
+        left: 47px;
+    }
+    .block_one {
+        left:222px;
+        top:22px;
+    }
+    .block_one p:nth-child(2) {
+        position: relative;
+        top:17px;
+    }
+    .block_two{
+        left: 222px;
+        top:60px;
+    }
+    .block_two p:nth-child(2) {
+        position: relative;
+        top:18px;
+    }
+    .block_three {
+        left: 222px;
+        top: 90px;
+    }
+    .block_three p:nth-child(2){
+        position: relative;
+        top:18px;
+    }
+    .oferta{
+        display: none;
+    }
+    .copyright {
+        display: none;
+    }
+    .security {
+        display: none;
+    }
+    .face {
+        top: 400px;
+    }
+}
+
+/* ДЛЯ ЭКРАНА -ШИРИНА 320 */
+@media (max-width:320px) {
+    .page {
+       height: auto;
+    }
+
+
+    /* ПЕРВЫЙ СЛАЙС */
+    .first_item{
+        padding: 0px;
+    }
+    .logo-desktop {
+        display: none;
+    }
+    .logo-mobile {
+        display: block;
+        width: 92px;
+        height: 28px;
+        position: relative;
+        left: 75px;
+        top: 28px;
+    }
+
+    .logo::after {
+        content: '';
+            position: absolute;
+            width: 18px;
+            height: 2px;
+            background-color: #1064E5;
+            top: 40px;
+            left: 337px;
+            transform: translateY(-180%) rotate(180deg);
+            border-radius: 2px;
+            box-shadow: 
+                        0 -6px 0 0 #1064E5,  
+                        0 6px 0 0 #1064E5;;
+    }
+
+    .right_head {
+        display: none;
+    }
+
+    .main_title {
+        font-size: 12px;
+        width: 223px;
+        height: 78px;
+        position: relative;
+        left: 22px;
+        top:-53px;
+        line-height: 26px;
+        letter-spacing: 0.5px;
+    }
+
+    .digit-steps {
+        position: relative;
+        top: -45px;
+        left: 18px;
+    }
+
+    .two_title {
+        position: relative;
+        top:-55px;
+        left:20px;
+        font-size: 12px;
+        letter-spacing: 0;
+    }
+
+    .text_item1 {
+        position: relative;
+        top:-70px;
+        left: 20px;
+        font-size: 14px;
+        width: 205px;
+        height: 108px;
+        letter-spacing: 0.0px;
+        line-height: 18px;
+    }
+
+    .taste_free {
+        position: relative;
+        top:-65px;
+        left: 40px;
+        letter-spacing: 0.11rem;
+        width: 238px;
+        height: 47px;
+        padding: 15.5px 32px;
+        font-size: 12px;
+        letter-spacing: 0.3px;
+    }
+    .first_item {
+        background-image: url('./img/background_first_320.png');
+        height: 508px;
+    }
+
+    .slider_points {
+        top: -40px;
+        left: 120px;
+    }
+
+
+    /* ВТОРОЙ СЛАЙС */
+    .two_item {
+        padding: 44px 20px 45px 20px;
+        height: 353px; 
+    }
+
+    .description {
+        width: 669px;
+        height: 92px;
+        display: flex;
+        justify-content: space-between; 
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 36px; 
+        padding: 44px 0px;
+    }
+
+    /* Все три блока одинаковые по ширине */
+    .moment,
+    .global,
+    .econom {
+        width: 300px; 
+        height: 64px;
+        margin-right: 0;
+        display: flex;
+        align-items: flex-start;
+        gap: 36px;
+    }
+
+    /* правый отступ у последнего элемента */
+    .econom {
+        margin-right: 0;
+    }
+
+    /* Картинки 42x42 */
+    .moment_pic,
+    .global_pic,
+    .econom_pic {
+        width: 42px;
+        height: 42px;
+        flex-shrink: 0;
+        margin-top: -32px; 
+        margin-left: 0px;
+    }
+
+    
+    .moment_pic img,
+    .global_pic img,
+    .econom_pic img,
+    .moment_pic picture,
+    .global_pic picture,
+    .econom_pic picture {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    /* Контентная часть */
+    .moment_content,
+    .global_content,
+    .econom_content {
+        flex: 1;
+    }
+
+    /* Заголовки */
+    .moment_content h2,
+    .global_content h2,
+    .econom_content h2 {
+        font-family: 'IBM Plex Sans 500', sans-serif;
+        font-size: 20px;
+        line-height: 24px;
+        color: #333437;
+        margin-bottom: 2px; 
+        margin-top: -40px; 
+        position: relative;
+        left:-25px;
+    }
+
+    .global_content h2,
+    .econom_content h2 {
+        margin-bottom: 4px;
+        line-height: 22px;
+        letter-spacing: 0.2px;
+    }
+
+    /* Параграфы 16px */
+    .moment_content p,
+    .global_content p,
+    .econom_content p {
+        font-family: 'IBM Plex Sans 400', sans-serif;
+        font-size: 14px;
+        line-height: 22px;
+        color: #061224E5;
+        letter-spacing: 0.0px;
+        position: relative;
+        left:-24px;
+        top:3px;
+        
+    }
+
+    .econom_content p {
+        font-family: 'IBM Plex Sans 400', sans-serif;
+        font-size: 14px; 
+        position: relative;
+        top: 3px;
+        left: -22px;
+        letter-spacing: 0px;
+        line-height: 20px;
+    }
+
+    /* лишние отступы */
+    .moment_content,
+    .global_content,
+    .econom_content {
+        margin: 0;
+        padding: 0;
+    }
+
+    .moment {
+        position: relative;
+        top:-8px;
+        margin-bottom: 9px;
+    }
+    .global {
+        position: relative;
+        top: 30px;
+    }
+    .econom {
+        position: relative;
+        top:60px;
+    }
+    .global_content p {
+        position: relative;
+        top:-3px;
+    }
+    .moment_content p {
+        line-height: 18px;
+    }
+
+
+    /* ТРЕТИЙ СЛАЙС */
+    .three_item {
+        height: 1125px;
+    }
+
+    .comfort_content {
+        width: 280px;
+
+    }
+
+    .comfort_content h1 {
+        font-size: 20px;
+        position: relative;
+        top: -50px;
+        left:-30px;
+    }
+
+    .comfort_content li {
+        font-size: 14px;
+        left: -25px;
+        top: -75px;
+        line-height: 20px;
+        margin-bottom: 0px;
+        letter-spacing: 0.2px;
+    }
+
+    ul li::before {
+        left:-5px;
+    }
+    #two_li {
+        margin: 0px;
+    }
+    .btn_more {
+        font-size: 12px;
+        position: relative;
+        top:-45px;
+    }
+    .comfort_pic {
+        display: none;
+    }
+    .comfort_pic_mini {
+        display: block;
+        position: relative;
+        left:-335px;
+        top: 345px;
+    }
+
+    .product_content {
+        width: 282px;
+    }
+    .product_pic {
+        display: none;
+    }
+
+    .product_content h1 {
+        font-size: 20px;
+        line-height: 20px;
+        margin-bottom: 0px;
+        position: relative;
+        left: -76px;
+        top:102px;
+    }
+
+    .product_pic_mini {
+        display: block;
+        position: relative;
+        top:400px;
+        left: 20px;
+    }
+
+    .product_content li {
+        font-size: 14px;
+        position: relative;
+        left:-72px;
+        top:111px;
+        line-height: 18px;
+    }
+    .btn_reg {
+        font-size: 12px;
+        position: relative;
+        top:105px;
+        left:-45px;
+    }
+
+    /* ЧЕТВЕРТЫЙ СЛАЙС */
+    .four_item {
+        height: 1241px;
+    }
+      .title_pac {
+        font-size: 10px;
+        letter-spacing: 1.44px;
+        top:-40px;
+        line-height: 24px;
+      }
+    .demo,
+    .business,
+    .pro,
+    .individual {
+        width: 256px;
+        height: 266px;
+    }
+
+    .demo{
+        left:140px;
+        top:-65px;
+    }
+    .doki {
+        position: relative;
+        top:-37px;
+    }
+    .number {
+        position: relative;
+        top:-50px;
+    }
+    .val{
+        position: relative;
+        top:-53px;
+    }
+    .demo button {
+        position: relative;
+        top:-40px;
+    }
+
+    .business{
+        left:-135px;
+        top: 230px;
+    }
+    .business h2 {
+        position: relative;
+        top: -15px;
+    }
+    .doki_2 {
+        position: relative;
+        top:-45px;
+    }
+    .number_2 {
+        position: relative;
+        top:-60px;
+    }
+    .val_2{
+        position: relative;
+        top:-60px;
+        left:-4px;
+    }
+    .business button {
+        position: relative;
+        top:-30px;
+        left:-5px;
+    }
+
+    .pro{
+        left: 140px;
+        top: 230px;
+    }
+    .pro h2 {
+        position: relative;
+        top: -15px;
+    }
+    .doki_3 {
+        position: relative;
+        top:-45px;
+    }
+    .number_3 {
+        position: relative;
+        top:-60px;
+    }
+    .val_3{
+        position: relative;
+        top:-60px;
+        left:-4px;
+    }
+    .pro button {
+        position: relative;
+        top:-30px;
+        left:-5px;
+    }
+
+    .individual{
+        left: -140px;
+        top: 510px;
+    }
+    .individual h2 {
+        position: relative;
+        top: -9px;
+        left:5px;
+    }
+    .doki_4 {
+        position: relative;
+        top:-7px;
+        left:4px;
+    }
+    .individual button {
+        position: relative;
+        top:10px;
+        left: 3px;
+    }
+
+    /* ПЯТЫЙ СЛАЙС */
+    .five_item {
+        height: 237px;
+    }
+    .stat {
+        margin: 0px;
+    }
+
+    .stat h1 {
+        font-size: 36px;
+        position: relative;
+        top: -22px;
+        left: -143px;
+    }
+
+    .stat h2 {
+        font-size: 20px;
+        position: relative;
+        top: -45px;
+        left: -143px;
+        letter-spacing: 0.3px;
+    }
+
+    .stat p {
+        position: relative;
+        top:-60px;
+        left:-143px;
+        line-height: 20px;
+        font-size: 14px;
+        width: 280px;
+        height: 72px;
+    }
+
+    /* ШЕСТОЙ СЛАЙС */
+
+    .six_item {
+        height: 253px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .friends {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .friends h1 {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 40px;
+        position: relative; 
+        top:-45px;
+        left:0px;
+        width: 100%;
+    }
+
+    /* Контейнер для логотипов */
+    .friends {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 600px;
+    }
+
+    /* Общие стили для всех картинок */
+    .fr1,
+    .fr2,
+    .fr3,
+    .fr4 {
+        position: static;
+        left: auto;
+        top: auto ;
+        right: auto;
+        margin: 0 ;
+    }
+
+    /* Первая картинка */
+    .fr1 {
+        width: 78px;
+        height: 48px;
+        position: relative;
+        left:22px;
+        top:-70px;
+    }
+
+    /* Вторая картинка */
+    .fr2 {
+        width: 99px; 
+        height: 40px;
+        position: relative;
+        top: -70px;
+        left: 65px;
+    }
+
+    /* Третья картинка */
+    .fr3 {
+        width: 83px; 
+        height: 43px;
+        position: relative;
+        left: -160px;
+        top:8px;
+
+    }
+
+    /* Четвертая картинка */
+    .fr4 {
+        width: 62px; 
+        height: 56px;
+        position: relative;
+        top:-45px;
+        left: 75px;
+    }
+
+    /* Для всех изображений внутри picture */
+    .fr1 img,
+    .fr2 img,
+    .fr3 img,
+    .fr4 img,
+    .fr1 picture,
+    .fr2 picture,
+    .fr3 picture,
+    .fr4 picture {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: block;
+    }
+
+    .points {
+        margin-top: 20px;
+        position: relative;
+        top: -65px;
+    }
+
+    /* СЕДЬМОЙ СЛАЙС */
+     .seven_item {
+        height: 845px;
+        padding: 30px 0;
+    }
+
+    .title_about {
+        font-size: 10px;
+        letter-spacing: 0.2px;
+        position: relative;
+        margin-bottom: 30px;
+        width: 280px;
+        text-align: center;
+        line-height: 20px;
+        top: -10px;
+    }
+
+    .three_blocks {
+        display: flex;
+        flex-direction: column; /* Карточки вертикально */
+        align-items: center;
+        width: 100%;
+        height: auto;
+        position: static;
+        gap: 40px;
+    }
+
+    .first_blok,
+    .second_blok {
+        width: 280px;
+        height: 367px;
+        position: static; 
+        margin: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+    }
+
+    .second_blok {
+        margin-left: 0;
+    }
+
+    /* Картинки */
+    .first_block_pic1,
+    .second_block_pic2 {
+        width: 280px;
+        height: 299px;
+        filter: blur(1px);
+        -webkit-filter: blur(1px);
+    }
+
+    .first_block_pic1 img,
+    .second_block_pic2 img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: block;
+    }
+
+    .first_block_pic1 img {
+        position: relative;
+        top:-45px;
+    }
+    .first_block_content {
+        position: relative;
+        left:0px;
+        top:-75px;
+        width: 257px;
+        height: 56px;
+        margin: 0px;
+
+    }
+    .first_block_content p{
+        font-size: 12px;
+    }
+    .first_block_content h3 {
+        font-size: 17px;
+        position: relative;
+        top:-5px;
+        letter-spacing: 0.0px;
+        line-height: 20px;
+    }
+
+    .second_block_pic2 img {
+        position: relative;
+        top:-80px;
+    }
+
+    .second_block_content {
+        position: relative;
+        left:0px;
+        top:-100px;
+        width: 257px;
+        height: 56px;
+        margin: 0px;
+
+    }
+    .second_block_content p{
+        font-size: 12px;
+    }
+    .second_block_content h3 {
+        font-size: 17px;
+        position: relative;
+        top:-7px;
+        letter-spacing: 0.0px;
+        line-height: 20px;
+    }
+
+
+    .third_blok {
+        display: none;
+    }
+
+    /* ВОСЬМОЙ СЛАЙС */
+    .eight_item {
+        height: 370px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+     .meet_title h1{
+        font-size: 20px;
+        letter-spacing: 0;
+        width: 280px;
+        height: 22px;
+        line-height: 24px;
+        position: relative;
+        top: 25px;
+        left:-100px;
+     }
+     .video_block{
+        width: 280px;
+        height: 288px;
+        margin-left: -30px;
+        margin-top: 10px;
+     }
+     .video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+     }
+
+     /* ДЕВЯТЫЙ СЛАЙС */
+   .nine_item {
+        height: 425px;
+        background-color: #D8F1F0;
+        padding: 30px 20px 48px 20px;
+    }
+
+    .question_title {
+        width: 280px;
+        height: 44px;
+        font-size: 10px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        margin: 0 auto 30px auto;
+        text-align: center;
+        position: static;
+        left: 0;
+        top: 0;
+    }
+
+    .block_faq {
+        width: 280px;
+        height: 347px;
+        margin: 0 auto;
+    }
+
+    .block_faq details {
+        margin-bottom: 18px;
+        line-height: 16px;
+    }
+
+    .block_faq summary {
+        list-style: none;
+        font-family: 'IBM Plex Sans 400', sans-serif;
+        font-size: 14px;
+        letter-spacing: 0.1px;
+        padding-left: 30px;
+        position: relative;
+        left:-123px;
+        top:18px;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .block_faq summary::before {
+        content: "+";
+        position: absolute;
+        left: -15px;
+        font-weight: bold;
+        font-size: 20px;
+        color: #1064E5;
+    }
+
+    .block_faq details[open] summary::before {
+        content: "-";
+        color: #1064E5;
+    }
+
+    .block_faq details:nth-child(2) p {
+        padding-left: 30px;
+        font-family: 'IBM Plex Sans 400', sans-serif;
+        font-size: 14px;
+        position: relative;
+        left:-150px;
+        top:20px;
+        margin-top: 4px;
+        padding-top: 4px;
+
+    }
+
+    .micro {
+        position: static;
+    }
+
+    .last {
+        position: static;
+    }
+
+    /* ДЕСЯТЫЙ СЛАЙС */
+    .ten_item {
+        height: 294px;
+    }
+    .news_title {
+        font-size: 10px;
+        letter-spacing: 0px;
+        width: 281px;
+        height: 31px;
+        position: relative;
+        top:-16px;
+        line-height: 20px;
+        margin-left: -34px;
+    }
+    .news_text {
+        font-size: 14px;
+        width: 258px;
+        height: 32px;
+        top:-23px;
+        margin-left:-40px;
+    }
+    input {
+        display: block;
+        width: 280px;
+        height: 42px;
+        position: relative;
+        left:-215px;
+        top:12px;
+       
+    }
+    .forma button {
+        
+        display: block;
+        width: 178px;
+        height: 42px;
+        position: relative;
+        top:10px;
+        margin-left: 20px;
+    }
+
+    /* ОДИННАДЦАТЫЙ СЛАЙС */
+    .eleven_item {
+        width: 100%;
+        height: auto;
+        background-color: #061224;
+        padding: 40px 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 20px;
+        position: relative;
+    }
+
+    /* Логотип - вверху слева */
+    .logo_foot {
+        grid-column: 1;
+        grid-row: 1;
+        position: static;
+        margin-bottom: 10px;
+    }
+
+    .logo_foot img {
+        width: 92px;
+        height: 28px;
+        position: relative;
+        top:-10px;
+    }
+
+    /* Блоки меню - две колонки */
+    .block_one {
+        grid-column: 1;
+        grid-row: 2;
+        color: white;
+        font-family: 'IBM Plex Sans 500', sans-serif;
+        font-size: 14px;
+        line-height: 24px;
+        position: relative;
+        margin: 0;
+    }
+
+    .block_two {
+        grid-column: 2;
+        grid-row: 2;
+        color: white;
+        font-family: 'IBM Plex Sans 500', sans-serif;
+        font-size: 14px;
+        line-height: 24px;
+        position: static;
+        margin: 0;
+    }
+
+    .block_three {
+        grid-column: 1;
+        grid-row: 3;
+        color: white;
+        font-family: 'IBM Plex Sans 500', sans-serif;
+        font-size: 14px;
+        line-height: 24px;
+        position: static;
+        margin: 0;
+    }
+
+    /* Email и Facebook под меню */
+    .email {
+        grid-column: 2;
+        grid-row: 3;
+        color: white;
+        font-family: 'IBM Plex Sans 500', sans-serif;
+        font-size: 12px;
+        line-height: 24px;
+        position: static;
+        margin: 0;
+    }
+
+    .face {
+        grid-column: 2;
+        grid-row: 4;
+        color: white;
+        font-family: 'IBM Plex Sans 500', sans-serif;
+        font-size: 12px;
+        line-height: 24px;
+        position: static;
+        margin: 0;
+    }
+
+    /* Адрес и телефоны - справа от email */
+    .adress {
+        grid-column: 1;
+        grid-row: 4;
+        color: #8a8989;
+        font-family: 'IBM Plex Sans 400', sans-serif;
+        font-size: 14px;
+        line-height: 24px;
+        position: static;
+        margin: 0;
+    }
+
+    /* Нижняя строка: оферта, безопасность, копирайт */
+    .oferta {
+        grid-column: 1;
+        grid-row: 5;
+        color: #8a8989;
+        font-family: 'IBM Plex Sans 400', sans-serif;
+        font-size: 12px;
+        line-height: 24px;
+        position: static;
+        margin-top: 20px;
+    }
+
+    .security {
+        grid-column: 1;
+        grid-row: 6;
+        color: #8a8989;
+        font-family: 'IBM Plex Sans 400', sans-serif;
+        font-size: 12px;
+        line-height: 24px;
+        position: static;
+        margin: 0;
+    }
+
+    .copyright {
+        grid-column: 2;
+        grid-row: 5 / span 2;
+        color: #8a8989;
+        font-family: 'IBM Plex Sans 400', sans-serif;
+        font-size: 12px;
+        line-height: 24px;
+        position: static;
+        margin-top: 20px;
+        text-align: right;
+    }
+
+    .eleven_item > * {
+        position: static ;
+        left: auto ;
+        right: auto ;
+        top: auto ;
+        bottom: auto ;
+    }
+
+}
